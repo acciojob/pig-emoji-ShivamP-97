@@ -1,1 +1,88 @@
 /*  your css code here. If applicable */
+.head {
+  width: 200px;
+  height: 200px;
+  background: #ffc0cb;
+  border: 5px solid black;
+  border-radius: 50%;
+  margin: 20px auto;
+  position: relative;
+}
+
+.head > div:nth-child(1) .ear {
+  width: 50px;
+  height: 50px;
+  background: #ffc0cb;
+  border: 5px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  z-index: -1;
+}
+
+.head .ear:nth-child(1) {
+  left: 10px;
+}
+
+.head .ear:nth-child(2) {
+  right: 10px;
+}
+
+.head > div:nth-child(2) .eye {
+  width: 50px;
+  height: 50px;
+  background: white;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: absolute;
+  top: 40px;
+}
+
+.head > div:nth-child(2) .eye:nth-child(1) {
+  left: 30px;
+}
+
+.head > div:nth-child(2) .eye:nth-child(2) {
+  right: 30px;
+}
+
+.pupil {
+  width: 25px;
+  height: 25px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nose {
+  width: 100px;
+  height: 60px;
+  background: #f57187;
+  border: 2px solid black;
+  border-radius: 35%;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nostril {
+  width: 25px; 
+  height: 30px; 
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nostril:nth-child(1) {
+  left: 20px;
+}
+
+.nostril:nth-child(2) {
+  right: 20px;
+}
